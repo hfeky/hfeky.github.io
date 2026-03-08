@@ -1,0 +1,72 @@
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev i,
+.slick-next i {
+  color: #646464;
+  transition: all 0.2s;
+}
+
+.slick-prev i:hover,
+.slick-next i:hover {
+  color: #000000;
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  opacity: .25;
+}
+
+@media (max-width: 750px) {
+  .slick-prev,
+  .slick-next {
+    visibility: hidden;
+  }
+}
+
+/* Dots */
+.slick-dots {
+  padding: 0;
+  margin: 5px 0 0 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  border: 4px solid #CCC;
+  border-radius: 50px;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+
+.slick-dots li.slick-active {
+  background: #333333;
+  border: 3px solid grey;
+  border-radius: 100px;
+  opacity: 1;
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
